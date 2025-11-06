@@ -9,25 +9,37 @@ h1 {
     text-align: center;
     color: #D4AF37;
     padding: 20px;
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #222;
 }
-nav{background-color: .rgba (0,0,0,0.9);
-    display: grid;
-place-items: center; 
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 }
-nav ul{
-    list-style-type: none;
-}
-nav ul a{
+
+nav ul a {
     display: inline-block;
-    padding: 20px;
+    padding: 0.5rem 1rem;
     text-decoration: none;
-    color: #fff;
-    transition:0.2s ease-in;
-    font-size: 18px;
+    color: #D4AF37;
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
-nav ul a:hover{
-    background-color: #D4EF37;
-    color: #fff;
+
+nav ul a:hover {
+    background-color: #D4AF37;
+    color: #000;
+    border-radius: 4px;
+}
 }
 .items{
     display: grid;
