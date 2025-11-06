@@ -1,15 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-font-family: sans-serif;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 box-sizing: border-box;
+background-color: #000;
 }
 h1 {
     text-align: center;
-    color: green;
+    color: #D4AF37;
     padding: 20px;
 }
-nav{background-color: lime;
+nav{background-color: .rgba (0,0,0,0.9);
     display: grid;
 place-items: center; 
 }
@@ -20,13 +21,13 @@ nav ul a{
     display: inline-block;
     padding: 20px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     transition:0.2s ease-in;
     font-size: 18px;
 }
 nav ul a:hover{
-    background-color: green;
-    color: white;
+    background-color: #D4EF37;
+    color: #fff;
 }
 .items{
     display: grid;
@@ -53,8 +54,8 @@ nav ul a:hover{
     padding: 5px 30px;
     border: none;
     outline: none;
-    background-color: green;
-    color: white;
+    background-color: #D4EF37;
+    color: #000;
     cursor: pointer;
     border-radius: 4px;
     font-size: 20px;
@@ -63,6 +64,9 @@ nav ul a:hover{
     transition: 0.2s all;
 }
 .item button:hover{
+    background-color: transparent;
+    color: #D4EF37
+    border: 2px solid #D4EF37;
     transform: scale(1.08);
 }
 @media screen and (max-width: 1000px){
@@ -170,7 +174,7 @@ media screen and (max-width: 768px){
 /* Contact Section */
 #contact {
     text-align: center;
-    color: green;
+    color: #D4AF37;
     padding: 20px;
 }
 
@@ -178,12 +182,12 @@ media screen and (max-width: 768px){
     display: grid;
     place-items: center;
     gap: 15px;
-    background-color: #f3fff3; /* soft greenish background */
+    background-color: #111;
     padding: 30px;
     border-radius: 8px;
     max-width: 500px;
     margin: 30px auto;
-    box-shadow: 0 0 10px rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
 }
 
 .contact-form label {
@@ -195,9 +199,11 @@ media screen and (max-width: 768px){
 
 .contact-form input,
 .contact-form textarea {
+    background-color: #000;
+    color: #fff;
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     border-radius: 4px;
     font-size: 15px;
     box-sizing: border-box;
@@ -211,8 +217,8 @@ media screen and (max-width: 768px){
 }
 
 .contact-form button {
-    background-color: green;
-    color: white;
+    background-color: #D4AF37;
+    color: #000;
     font-size: 18px;
     border: none;
     padding: 10px 30px;
@@ -222,7 +228,7 @@ media screen and (max-width: 768px){
 }
 
 .contact-form button:hover {
-    background-color: lime;
+    background-color: transparent;
     color: black;
     transform: scale(1.05);
 }
